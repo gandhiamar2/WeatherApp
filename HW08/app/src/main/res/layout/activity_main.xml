@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gandh.hw08.MainActivity">
+
+    <TextView
+        android:text="Current city not yet set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Set Current City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setcurrent_button"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:id="@+id/pb1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/rl1"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_head_city"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/text_time_pretty"
+            android:layout_below="@+id/text_temperature"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+            android:id="@+id/imageView"
+            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:foregroundGravity="center"
+            android:layout_below="@+id/text_cloudy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_temp_dup"
+            android:gravity="center"
+            android:layout_alignBaseline="@+id/text_temperature"
+            android:layout_alignBottom="@+id/text_temperature"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:id="@+id/text_temperature"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/text_temp_dup"
+            android:layout_alignStart="@+id/text_temp_dup" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_cloudy"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/text_head_city"
+             />
+    </RelativeLayout>
+
+    <Button
+        android:text="Search City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rl2"
+        android:layout_below="@+id/textView6">
+
+        <TextView
+            android:text="There are no cities to display."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:text="Search the city from search box and save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:id="@+id/textView5" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rcl1"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Country Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="City Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/pb1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Saved Cities"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+         />
+
+</RelativeLayout>

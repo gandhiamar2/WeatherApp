@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="157dp"
+        android:layout_marginStart="157dp"
+        android:id="@+id/pb3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/tv1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/tv2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_alignStart="@+id/tv3"
+        android:id="@+id/tv4"
+         />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/tv2"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_alignStart="@+id/tv2" />
+
+    <TextView
+        android:text="Condition"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_alignLeft="@+id/pb3"
+        android:layout_alignStart="@+id/pb3"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:text="Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/tv4"
+        android:layout_alignStart="@+id/tv4"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv2"
+        android:layout_below="@+id/tv7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:layout_height="150dp"
+        android:scrollbars="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:text="Click here for extended forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/tv8" />
+
+    <TextView
+        android:text="Click here for more details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/tv7"
+        android:layout_below="@+id/tv5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv5"
+        android:layout_below="@+id/pb3"
+        android:layout_alignLeft="@+id/tv4"
+        android:layout_alignStart="@+id/tv4"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv6"
+        android:layout_above="@+id/tv7"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_alignRight="@+id/iv2"
+        android:layout_alignEnd="@+id/iv2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4_dup"
+        android:layout_alignBaseline="@+id/tv4"
+        android:layout_alignBottom="@+id/tv4"
+        android:layout_alignLeft="@+id/tv3"
+        android:layout_alignStart="@+id/tv3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_lock_lock"
+        android:id="@+id/iv1"
+        android:layout_above="@+id/tv5"
+        android:layout_alignLeft="@+id/tv4"
+        android:layout_alignStart="@+id/tv4" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:id="@+id/iv2"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_above="@+id/tv6"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:text="Headline"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/tv1"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1" />
+
+</RelativeLayout>

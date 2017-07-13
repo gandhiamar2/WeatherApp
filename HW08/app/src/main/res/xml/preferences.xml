@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ListPreference     android:title="Temperature unit"
+        android:summary="Choose between Celcius and Farhenheit"
+        android:key="temp"
+        android:defaultValue="0"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:positiveButtonText="Done"
+        
+      />
+
+    <Preference android:title="Current city"
+        android:key="change_city"
+        android:selectable="true"
+        android:enabled="true"
+        android:summary="Change Current City"></Preference>
+
+
+</PreferenceScreen>

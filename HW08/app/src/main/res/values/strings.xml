@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HW08</string>
+
+    <string-array name="listArray">
+        <item>Celcius</item>
+        <item>Farhenheit</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>c</item>
+        <item>f</item>
+    </string-array>
+</resources>
